@@ -16,13 +16,15 @@ export const handler = [
     );
   }),
   rest.get('http://localhost:5000/options', (req, res, ctx) => {
-    return res([
-      {
-        name: 'Insurance',
-      },
-      {
-        name: 'Dinner',
-      },
-    ]);
+    return res(
+      ctx.json([
+        {
+          name: 'Insurance',
+        },
+        {
+          name: 'Dinner',
+        },
+      ]),
+    );
   }),
 ];
