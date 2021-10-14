@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import MyComponent from './MyComponent';
 
 class App extends Component {
   render() {
     // 렌더 함수는 필수
-    const name = 'react';
-    return <div className="react">{name}</div>;
+    return <MyComponent name="gd" />;
   }
 }
+export default App;

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const MyComponent = () => {
-  return <div>으림ㄴㅇ르ㅏㅣ;ㅁㄴ어;ㅣㅏㅓ</div>;
+const MyComponent = ({ name }) => {
+  return <div>{name}</div>;
 };
 
 export default MyComponent;
