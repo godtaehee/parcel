@@ -1,7 +1,11 @@
 import React from 'react';
 
-const MyComponent = ({ name }) => {
-  return <div>{name}</div>;
+const MyComponent = ({ name, children }) => {
+  return (
+    <div>
+      {name} {children}
+    </div>
+  );
 };
 MyComponent.defaultProps = {
   name: '기본이름',
